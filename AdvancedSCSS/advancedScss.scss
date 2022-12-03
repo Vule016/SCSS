@@ -1,0 +1,112 @@
+@import './mixins';
+
+@function column-width($overall-width, $numberOf-columns) {
+    @return $overall-width / $numberOf-columns;
+}
+
+* {
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+main {
+    width: 90%;
+
+    ul {
+        @include flexCenter(column);
+        gap: 10px;
+
+        li {
+            @include flexCenter(row);
+            list-style: none;
+
+            a {
+                display: flex;
+                justify-content: center;
+                width: 300px;
+                height: 40px;
+                border-radius: 10px;
+                padding-top: 20px;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                color: black;
+
+                &.important {
+                    font-weight: bold;
+                }
+
+                &:link {
+                    background-color: green;
+                }
+
+                &:visited {
+                    background-color: orange;
+                }
+
+                &:hover {
+                    background-color: paleturquoise;
+                }
+
+                &:active {
+                    background-color: yellow;
+                }
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .p-#{$i} {
+        font-size: 14px + $i*2;
+    }
+}
+
+.first {
+    width: 80%;
+    @include flexCenter(column);
+
+    p {
+
+        margin-top: 10px;
+
+        &.p-1 {
+            @include backgroundColor(1);
+        }
+
+        &.p-2 {
+            @include backgroundColor(2);
+        }
+
+        &.p-3 {
+            @include backgroundColor(3);
+        }
+
+        &.p-4 {
+            @include backgroundColor(4);
+        }
+    }
+}
+
+.second {
+    padding-top: 30px;
+    width: 80%;
+    @include flexCenter(row);
+
+    .p-5 {
+        margin-right: 10px;
+        background-color: lightblue;
+        @include boxSizing(content)
+    }
+
+    .p-6 {
+        background-color: lightgreen;
+        @include boxSizing(border)
+    }
+}
+
+.table {
+    td {
+        width: column-width(600px, 5);
+    }
+}

@@ -1,0 +1,110 @@
+* {
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+main {
+  width: 90%;
+}
+main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+main ul li a {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  padding-top: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+main ul li a.important {
+  font-weight: bold;
+}
+main ul li a:link {
+  background-color: green;
+}
+main ul li a:visited {
+  background-color: orange;
+}
+main ul li a:hover {
+  background-color: paleturquoise;
+}
+main ul li a:active {
+  background-color: yellow;
+}
+
+.p-1 {
+  font-size: 16px;
+}
+
+.p-2 {
+  font-size: 18px;
+}
+
+.p-3 {
+  font-size: 20px;
+}
+
+.p-4 {
+  font-size: 22px;
+}
+
+.first {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first p {
+  margin-top: 10px;
+}
+.first p.p-1 {
+  background-color: rgb(110, 167, 202);
+}
+.first p.p-2 {
+  background-color: rgb(184, 93, 93);
+}
+.first p.p-3 {
+  background-color: rgb(102, 196, 102);
+}
+.first p.p-4 {
+  background-color: rgb(87, 128, 168);
+}
+
+.second {
+  padding-top: 30px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.second .p-5 {
+  margin-right: 10px;
+  background-color: lightblue;
+  box-sizing: content-box;
+}
+.second .p-6 {
+  background-color: lightgreen;
+  box-sizing: border-box;
+}
+
+.table td {
+  width: 120px;
+}/*# sourceMappingURL=advancedScss.css.map */
