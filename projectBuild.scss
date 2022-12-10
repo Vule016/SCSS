@@ -1,0 +1,770 @@
+//Colors
+$color_1: rgb(255, 152, 1);
+$color_2: rgb(119, 119, 119);
+$color_3: white;
+$color_4: #eaeaea;
+$color_5: rgb(92, 167, 211);
+$color_6: rgb(31, 31, 31);
+$color_7: rgb(87, 87, 87);
+$color_8: rgb(0, 0, 0);
+$color_9: rgb(255, 255, 255);
+
+//Fonts
+$font-family_1: "Roboto Bold";
+$font-family_2: "Roboto Light";
+$font-family_3: "Roboto Regular";
+
+//Background colors
+$background-color_1: rgb(115, 201, 252);
+$background-color_2: rgb(20, 110, 180);
+$background-color_3: rgb(127, 194, 247);
+$background-color_4: rgb(44, 221, 152);
+$background-color_5: rgb(255, 79, 129);
+$background-color_6: rgb(51, 105, 230);
+$background-color_7: rgb(255, 152, 1);
+$background-color_8: rgb(33, 33, 33);
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(./Fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(./Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(./Fonts/Roboto-Regular.ttf);
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexSpace {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+@mixin flexColumnOnly {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexRowSpacebetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexWrapRow {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: $font-family_1;
+}
+
+.build {
+    padding-left: 10px;
+    color: $color_1;
+    border: 5px solid rgb(119, 119, 119);
+    border-right: none;
+}
+
+.estate {
+    color: $color_2;
+}
+
+.navHeader {
+    width: 80%;
+    margin: auto;
+    background-color: $background-color_1;
+}
+
+.lista1 {
+    list-style-type: none;
+}
+
+.listali1 {
+    @include flexCenter();
+    font-family: $font-family_1;
+    height: 35px;
+    cursor: pointer;
+    color: $color_3;
+}
+
+.divPrvaSlika {
+    font-family: $font-family_2;
+}
+
+.prvaSlika {
+    height: auto;
+    color: $color_4;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.buildings {
+    position: absolute;
+    top: 45%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 21px;
+}
+
+.button1 {
+    color: $color_4;
+    padding: 9px 20px;
+    background-color: $background-color_2;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.who {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-family: $font-family_2;
+    text-align: center;
+}
+
+.symbol {
+    text-align: center;
+}
+
+.blue1 {
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: $font-family_2;
+    color: $color_5;
+    padding-inline-start: 10%;
+}
+
+.parBuild {
+    padding-top: 15px;
+    font-family: $font-family_3;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.navlista2 {
+    line-height: 30px;
+}
+
+.normaltext {
+    color: $color_6;
+    padding: 10px;
+    padding-top: 15px;
+    font-family: $font-family_3;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.lista2 {
+    list-style-image: url(./Slike/arrow_bullet.png);
+    font-family: $font-family_3;
+    color: $color_7;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.aboutimg {
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.blue2 {
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: $font-family_2;
+    color: $color_5;
+    padding-inline-start: 10%;
+}
+
+.whatPeopleSays {
+    @include flexSpace();
+    width: 85%;
+    margin: 0 auto;
+    font-family: $font-family_3;
+
+    article {
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: solid 2px rgb(255, 255, 255);
+            padding: 3px;
+        }
+    }
+}
+
+.line-square-line {
+    padding-top: 12px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.what {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: $font-family_2;
+}
+
+.line {
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.square {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0px 5px;
+    transform: rotate(45deg);
+    position: relative;
+    top: -9px;
+}
+
+.williamson {
+    @include flexColumnOnly();
+    background-color: $background-color_3;
+    color: $color_3;
+    margin-bottom: 10px;
+    padding: 20px 20px 5px 20px;
+}
+
+.will-img {
+    @include flexRow();
+    p {
+        @include flexColumnOnly();
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+        margin: 0px 10px;
+        color: $color_8;
+        font-family: $font-family_1;
+    }
+}
+
+.j-lo {
+    background-color: $background-color_3;
+    color: $color_3;
+    margin-bottom: 10px;
+    padding: 20px 20px 5px 20px;
+}
+
+.s-gomez {
+    background-color: $background-color_3;
+    color: $color_3;
+    margin-bottom: 10px;
+    padding: 20px 20px 5px 20px;
+}
+
+.line-height {
+    line-height: 1.5;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.getintouch {
+    h4 {
+        color: $color_8;
+        font-size: x-large;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 50px;
+        font-family: $font-family_2;
+    }
+}
+
+.contact {
+    @include flexCenter();
+    float: left;
+    width: 50%;
+    flex-direction: column;
+    background-color: $background-color_4;
+    color: $color_9;
+    font-family: $font-family_3;
+    text-align: center;
+
+    h4 {
+        color: $color_9;
+        font-weight: normal;
+    }
+
+    img {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    div {
+        @include flexRow();
+        padding-bottom: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+.connect {
+    @include flexCenter();
+    float: left;
+    width: 50%;
+    background-color: $background-color_5;
+    flex-direction: column;
+    font-family: $font-family_3;
+
+    img {
+        width: 30px;
+        padding-top: 50px;
+        padding: 5px;
+    }
+
+    h4 {
+        color: $color_9;
+        font-weight: normal;
+    }
+}
+
+.address {
+    @include flexCenter();
+    float: left;
+    width: 50%;
+    flex-direction: column;
+    background-color: $background-color_6;
+    color: $color_9;
+    text-align: center;
+    font-family: $font-family_3;
+
+    h4 {
+        color: $color_9;
+        margin-top: 40px;
+        padding: 15px;
+        font-weight: normal;
+    }
+
+    p {
+        margin: 0px 15px;
+        padding: 20px;
+    }
+}
+
+.house {
+    float: left;
+    width: 50%;
+    background-color: $background-color_3;
+
+    img {
+        padding: 5px 10px;
+        width: 100%;
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+
+    h4 {
+        font-size: x-large;
+        color: $color_8;
+        font-family: $font-family_2;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+#sub {
+    color: $color_9;
+    background-color: $background-color_7;
+    width: 20%;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 2%;
+}
+
+footer {
+    @include flexCenter();
+    flex-direction: column;
+    font-family: $font-family_3;
+    background-color: $background-color_8;
+    color: $color_9;
+    text-align: center;
+    padding: 20px 5px;
+    padding-top: 25px;
+    font-size: small;
+    margin-top: 20px;
+
+    a {
+        line-height: 3;
+        color: $color_3;
+        text-decoration: none;
+        margin: 10px 5px;
+        font-size: small;
+    }
+}
+
+/* ZA PAMETNE TELEFONE */
+@media screen and (min-width: 320px) {
+    header {
+        @include flexColumnOnly();
+    }
+
+    .naviBar {
+        order: -1;
+    }
+
+    .logo {
+        height: 300px;
+    }
+
+    .stars {
+        i {
+            color: $color_3;
+        }
+    }
+
+    .divs {
+        height: auto;
+        display: flex;
+        flex-flow: wrap row;
+    }
+
+    .flex {
+        flex-basis: 50%;
+    }
+
+    .address {
+        @include flexCenter();
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .contact {
+        height: 200px;
+
+        h4 {
+            overflow-y: hidden;
+        }
+    }
+
+    .connect {
+        h4 {
+            margin: auto;
+        }
+
+        img {
+            margin-bottom: 60px;
+        }
+    }
+
+    .house {
+        height: 200px;
+
+        img {
+            margin: auto;
+            display: block;
+            width: 200px;
+            text-align: center;
+        }
+    }
+}
+
+/* ZA TABLET UREDJAJE */
+@media screen and (min-width: 768px) {
+    header {
+        @include flexRow();
+        position: relative;
+    }
+
+    .naviBar {
+        @include flexRowSpacebetween();
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+
+        h1 {
+            width: 300px;
+            position: relative;
+            display: inline-flex;
+            margin-left: 10px;
+        }
+    }
+
+    .navHeader {
+        position: relative;
+        background: none;
+        padding-right: 20px;
+    }
+
+    .build {
+        color: $color_1;
+        border: 5px solid rgb(255, 255, 255);
+        border-right: none;
+    }
+
+    .estate {
+        padding-top: 4px;
+        padding-left: 10px;
+        color: $color_9;
+    }
+
+    .listali1 {
+        padding: 5px;
+        float: right;
+        display: block;
+    }
+
+    .prvaSlika {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .buildings {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .button1 {
+        padding: 9px 20px;
+        border-radius: 20px;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .newflex {
+        @include flexWrapRow();
+    }
+
+    .divs {
+        @include flexWrapRow();
+        height: auto;
+    }
+
+    .flex {
+        flex-basis: 50%;
+    }
+
+    .contact {
+        h4 {
+            overflow-y: hidden;
+        }
+
+        img {
+            height: 40px;
+        }
+
+        height: 300px;
+    }
+
+    .connect {
+        img {
+            margin-left: 7px;
+            margin-right: 7px;
+        }
+
+        div {
+            margin-top: 30px;
+        }
+    }
+
+    .house {
+        img {
+            padding: 0;
+            margin: auto;
+            display: block;
+            width: 300px;
+            text-align: center;
+        }
+
+        height: 300px;
+    }
+
+    iframe {
+        height: 350px;
+    }
+
+    .list {
+        flex-basis: 50%;
+
+        h4 {
+            text-align: left;
+        }
+    }
+
+    .weMake {
+        flex-basis: 100%;
+    }
+
+    .divAboutimg {
+        box-sizing: border-box;
+        flex-basis: 50%;
+        display: block;
+    }
+
+    .welcomelist {
+        padding-left: 50px;
+        display: block;
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+
+    .what-pic {
+        @include flexWrapRow();
+        justify-content: space-between;
+
+        article {
+            flex-basis: 49%;
+        }
+    }
+
+    #name {
+        width: 32%;
+    }
+
+    #email {
+        width: 32%;
+    }
+
+    #tel {
+        width: 32%;
+    }
+
+    .change-input {
+        @include flexRow();
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .address {
+        height: 300px;
+    }
+}
+
+/* ZA PC */
+@media screen and (min-width: 1200px) {
+    .divPrvaSlika {
+        @include flexCenter();
+        flex-direction: column;
+    }
+
+    .button1 {
+        top: 60%;
+    }
+
+    .aboutimg {
+        width: 100%;
+        flex-basis: 32%;
+    }
+
+    .weMake {
+        flex-basis: 32%;
+        flex-basis: 32%;
+    }
+
+    .list {
+        flex-basis: 32%;
+
+        li {
+            margin: 10px 0;
+        }
+    }
+
+    .newflex {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .what-pic {
+        article {
+            flex-basis: 32%;
+            flex-grow: 1;
+            margin: 5px;
+            padding-bottom: 20px;
+        }
+
+        justify-content: space-between;
+    }
+
+    .divs {
+        flex-flow: nowrap;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .line {
+        width: 12%;
+    }
+
+    .welcomelist {
+        flex-basis: 32%;
+    }
+
+    .divAboutimg {
+        flex-basis: 32%;
+    }
+}

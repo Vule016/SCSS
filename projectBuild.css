@@ -1,0 +1,654 @@
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(./Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url(./Fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(./Fonts/Roboto-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: "Roboto Bold";
+}
+
+.build {
+  padding-left: 10px;
+  color: rgb(255, 152, 1);
+  border: 5px solid rgb(119, 119, 119);
+  border-right: none;
+}
+
+.estate {
+  color: rgb(119, 119, 119);
+}
+
+.navHeader {
+  width: 80%;
+  margin: auto;
+  background-color: rgb(115, 201, 252);
+}
+
+.lista1 {
+  list-style-type: none;
+}
+
+.listali1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Bold";
+  height: 35px;
+  cursor: pointer;
+  color: white;
+}
+
+.divPrvaSlika {
+  font-family: "Roboto Light";
+}
+
+.prvaSlika {
+  height: auto;
+  color: #eaeaea;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+.img1 {
+  width: 100%;
+}
+
+.buildings {
+  position: absolute;
+  top: 45%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 21px;
+}
+
+.button1 {
+  color: #eaeaea;
+  padding: 9px 20px;
+  background-color: rgb(20, 110, 180);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.who {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-family: "Roboto Light";
+  text-align: center;
+}
+
+.symbol {
+  text-align: center;
+}
+
+.blue1 {
+  font-size: 20px;
+  padding-top: 10px;
+  font-family: "Roboto Light";
+  color: rgb(92, 167, 211);
+  -webkit-padding-start: 10%;
+          padding-inline-start: 10%;
+}
+
+.parBuild {
+  padding-top: 15px;
+  font-family: "Roboto Regular";
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.navlista2 {
+  line-height: 30px;
+}
+
+.normaltext {
+  color: rgb(31, 31, 31);
+  padding: 10px;
+  padding-top: 15px;
+  font-family: "Roboto Regular";
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.lista2 {
+  list-style-image: url(./Slike/arrow_bullet.png);
+  font-family: "Roboto Regular";
+  color: rgb(87, 87, 87);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.aboutimg {
+  padding-top: 20px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.blue2 {
+  font-size: 20px;
+  padding-top: 20px;
+  font-family: "Roboto Light";
+  color: rgb(92, 167, 211);
+  -webkit-padding-start: 10%;
+          padding-inline-start: 10%;
+}
+
+.whatPeopleSays {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Roboto Regular";
+}
+.whatPeopleSays article img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 2px rgb(255, 255, 255);
+  padding: 3px;
+}
+
+.line-square-line {
+  padding-top: 12px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.what {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Roboto Light";
+}
+
+.line {
+  display: inline-block;
+  height: 20px;
+  width: 40px;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0px 5px;
+  transform: rotate(45deg);
+  position: relative;
+  top: -9px;
+}
+
+.williamson {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(127, 194, 247);
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px 20px 5px 20px;
+}
+
+.will-img {
+  display: flex;
+  flex-direction: row;
+}
+.will-img p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  margin: 0px 10px;
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Bold";
+}
+
+.j-lo {
+  background-color: rgb(127, 194, 247);
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px 20px 5px 20px;
+}
+
+.s-gomez {
+  background-color: rgb(127, 194, 247);
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px 20px 5px 20px;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+.line-height p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.getintouch h4 {
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  font-family: "Roboto Light";
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  flex-direction: column;
+  background-color: rgb(44, 221, 152);
+  color: rgb(255, 255, 255);
+  font-family: "Roboto Regular";
+  text-align: center;
+}
+.contact h4 {
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+}
+.contact img {
+  width: 25px;
+  margin-right: 5px;
+}
+.contact div {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  background-color: rgb(255, 79, 129);
+  flex-direction: column;
+  font-family: "Roboto Regular";
+}
+.connect img {
+  width: 30px;
+  padding-top: 50px;
+  padding: 5px;
+}
+.connect h4 {
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  flex-direction: column;
+  background-color: rgb(51, 105, 230);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Roboto Regular";
+}
+.address h4 {
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  padding: 15px;
+  font-weight: normal;
+}
+.address p {
+  margin: 0px 15px;
+  padding: 20px;
+}
+
+.house {
+  float: left;
+  width: 50%;
+  background-color: rgb(127, 194, 247);
+}
+.house img {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+}
+.form h4 {
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Light";
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+#sub {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 152, 1);
+  width: 20%;
+  border: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 2%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto Regular";
+  background-color: rgb(33, 33, 33);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 5px;
+  padding-top: 25px;
+  font-size: small;
+  margin-top: 20px;
+}
+footer a {
+  line-height: 3;
+  color: white;
+  text-decoration: none;
+  margin: 10px 5px;
+  font-size: small;
+}
+
+/* ZA PAMETNE TELEFONE */
+@media screen and (min-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .naviBar {
+    order: -1;
+  }
+  .logo {
+    height: 300px;
+  }
+  .stars i {
+    color: white;
+  }
+  .divs {
+    height: auto;
+    display: flex;
+    flex-flow: wrap row;
+  }
+  .flex {
+    flex-basis: 50%;
+  }
+  .address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+  }
+  .contact {
+    height: 200px;
+  }
+  .contact h4 {
+    overflow-y: hidden;
+  }
+  .connect h4 {
+    margin: auto;
+  }
+  .connect img {
+    margin-bottom: 60px;
+  }
+  .house {
+    height: 200px;
+  }
+  .house img {
+    margin: auto;
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
+}
+/* ZA TABLET UREDJAJE */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .naviBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+  }
+  .naviBar h1 {
+    width: 300px;
+    position: relative;
+    display: inline-flex;
+    margin-left: 10px;
+  }
+  .navHeader {
+    position: relative;
+    background: none;
+    padding-right: 20px;
+  }
+  .build {
+    color: rgb(255, 152, 1);
+    border: 5px solid rgb(255, 255, 255);
+    border-right: none;
+  }
+  .estate {
+    padding-top: 4px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+  }
+  .listali1 {
+    padding: 5px;
+    float: right;
+    display: block;
+  }
+  .prvaSlika {
+    padding-top: 0;
+    width: 100%;
+  }
+  .buildings {
+    text-align: center;
+    font-size: xx-large;
+  }
+  .button1 {
+    padding: 9px 20px;
+    border-radius: 20px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .newflex {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  .divs {
+    display: flex;
+    flex-flow: wrap row;
+    height: auto;
+  }
+  .flex {
+    flex-basis: 50%;
+  }
+  .contact {
+    height: 300px;
+  }
+  .contact h4 {
+    overflow-y: hidden;
+  }
+  .contact img {
+    height: 40px;
+  }
+  .connect img {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .connect div {
+    margin-top: 30px;
+  }
+  .house {
+    height: 300px;
+  }
+  .house img {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 300px;
+    text-align: center;
+  }
+  iframe {
+    height: 350px;
+  }
+  .list {
+    flex-basis: 50%;
+  }
+  .list h4 {
+    text-align: left;
+  }
+  .weMake {
+    flex-basis: 100%;
+  }
+  .divAboutimg {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    display: block;
+  }
+  .welcomelist {
+    padding-left: 50px;
+    display: block;
+    flex-basis: 50%;
+    box-sizing: border-box;
+  }
+  .what-pic {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+  }
+  .what-pic article {
+    flex-basis: 49%;
+  }
+  #name {
+    width: 32%;
+  }
+  #email {
+    width: 32%;
+  }
+  #tel {
+    width: 32%;
+  }
+  .change-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 5px;
+  }
+  .address {
+    height: 300px;
+  }
+}
+/* ZA PC */
+@media screen and (min-width: 1200px) {
+  .divPrvaSlika {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .button1 {
+    top: 60%;
+  }
+  .aboutimg {
+    width: 100%;
+    flex-basis: 32%;
+  }
+  .weMake {
+    flex-basis: 32%;
+    flex-basis: 32%;
+  }
+  .list {
+    flex-basis: 32%;
+  }
+  .list li {
+    margin: 10px 0;
+  }
+  .newflex {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .what-pic {
+    justify-content: space-between;
+  }
+  .what-pic article {
+    flex-basis: 32%;
+    flex-grow: 1;
+    margin: 5px;
+    padding-bottom: 20px;
+  }
+  .divs {
+    flex-flow: nowrap;
+  }
+  .form {
+    width: 70%;
+  }
+  .line {
+    width: 12%;
+  }
+  .welcomelist {
+    flex-basis: 32%;
+  }
+  .divAboutimg {
+    flex-basis: 32%;
+  }
+}/*# sourceMappingURL=projectBuild.css.map */
